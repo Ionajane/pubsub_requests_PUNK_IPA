@@ -2,7 +2,7 @@ const RequestHelper = function (url) {
   this.url = url;
 };
 
-  Request.prototype.get = function () {
+  RequestHelper.prototype.get = function () {
     return fetch(this.url)
       .then( (response) => response.json() );
     };
