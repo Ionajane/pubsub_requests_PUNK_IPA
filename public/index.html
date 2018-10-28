@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Oswald');
+    </style>
+
     <title>PUNK API</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/bundle.js"></script>
   </head>
-  <body>
-    <h1>PUNK API</h1>
 
-    <div class="list-of-beers">
+  <body>
+    <header>
+      <div class="slide-show" style="max-width:600px">
+      <div class="mySlides slide-show">
+        <h1>BREWING...</h1>
+      </div>
+
+    <div class="mySlides">
+      <h1>BREWDOG!</h1>
+    </div>
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1}
+      x[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 2000);
+      }
+    </script>
+
+    </header>
+
+    <h2>THIS IS THE BODY >> ADD BEER LIST VIEW </h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. </p>
 
       <section id="beers"></section>
-      <label for="beers">List of all the beers:</label>
+      <div class="beers">
+        <ul>
 
-    </div>
-
+      </ul>
+      </div>
   </body>
+
+<footer>
+  <h6>&copy HEY, THIS IS THE FOOTER.</h6>
+</footer>
+
 </html>

@@ -1,5 +1,37 @@
 body {
-  font-family: helvetica;
+  font-family: 'Oswald', sans-serif;
   color: #93A8AC;
   background-color: #4C5760;
+  text-align: center;
+}
+
+header {
+  background-color: #93A8AC;
+  padding: 20px;
+  text-align: left;
+}
+
+h1 {
+font-size: 80px;
+color: #4C5760;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+img {
+  width: 10%;
+}
+
+footer {
+  text-align: center;
+  color: #4C5760;
+  background-color: #93A8AC;
 }

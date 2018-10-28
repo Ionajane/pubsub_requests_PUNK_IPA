@@ -6,20 +6,12 @@ const Beers = require('./models/beers.js');
 document.addEventListener('DOMContentLoaded', () => {
   console.log("Helloooooo");
 
-  const beers = new Beers();
-  beers.getData();
-  console.log(beers);
-
   const beersListContainer = document.querySelector('#beers');
   const beersListView = new BeersListView(beersListContainer);
   beersListView.bindEvents();
+  console.log(beersListView);
 
+  const beers = new Beers();
+  beers.getData();
 
 });
-
-
-
-
-
-
-//HTML ?     <script src="js/bundle.js"></script>
