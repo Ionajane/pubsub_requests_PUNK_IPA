@@ -1,19 +1,19 @@
 body {
   font-family: 'Oswald', sans-serif;
-  color: #93A8AC;
-  background-color: #4C5760;
+  color: black;
+  background-color: white;
   text-align: center;
 }
 
 header {
-  background-color: #93A8AC;
-  padding: 20px;
+  background-color: black;
+  padding: 15px;
   text-align: left;
 }
 
 h1 {
 font-size: 80px;
-color: #4C5760;
+color: white;
 }
 
 h2 {
@@ -24,6 +24,8 @@ h2 {
 p {
   font-size: 14px;
   text-align: justify;
+  padding: 20px;
+  margin: auto;
 }
 
 img {
@@ -32,6 +34,6 @@ img {
 
 footer {
   text-align: center;
-  color: #4C5760;
-  background-color: #93A8AC;
+  color: white;
+  background-color: black;
 }
